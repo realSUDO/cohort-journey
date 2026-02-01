@@ -25,7 +25,7 @@ If I ever look back and ask *“did I really put in the work?”* .. the answer 
 
 ---
 
-## 📁 Current Structure
+## Current Structure
 
 ```
 .
@@ -84,7 +84,7 @@ This repo keeps me honest.
 
 ## Status
 
-🛠 **Coding in progress**
+ **Coding in progress**
 This repository will keep evolving as the cohort goes on.
 
 Things may be messy.
@@ -92,7 +92,7 @@ but that's okay..
 
 ---
 
-## 🧭 If you’re reading this
+## If you’re reading this
 
 If you’re:
 
@@ -102,7 +102,7 @@ If you’re:
 
 ---
 
-## 📜 License
+## License
 
 MIT License : feel free to learn from it, reuse it, and build on it.
 Just give credit where it’s due.
