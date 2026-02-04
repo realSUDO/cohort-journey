@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
 	--bg-color: #f4f5f4;
 	--color-darkgreen: #1d4c56;
@@ -11,6 +13,9 @@
 	--color-sky: #004D74;
 	--color-lightpink: #bca794;
 	--color-black: #000;
+	--font-family : 'Inter', sans-serif;
+	
+	
 
 	--text-white: #f4f5f4;
 }
@@ -24,41 +29,90 @@
 
 
 header {
-	position: relative;
+	position: fixed;
+	overflow: hidden;
 	top: 0;
 	left: 0;
 	width: 100%;
+	border: 3px solid red;
+	height: 65px;
 	z-index: 100;
+	backdrop-filter: blur(14px);
 }
 
 
 .nav {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	border: 3px solid blue;
+	margin: 0 auto;
+	grid-template-columns: 2.5fr 1fr;
 	align-items: center;
-	padding: 2rem 4rem;
-	height: 96px;
-}
-.nav--noblur { 
-	position: relative;
-	background: transparent;
-	position: relative;
-	z-index: 2;
-}
-
-.nav--blur {
+	height: 100%;
+	width: 56.2vw;
 	position: sticky;
 	top: 0;
-
-	/* blur version */
-	background: rgba(255, 255, 255, 0.6);
-	backdrop-filter: blur(12px);
-	-webkit-backdrop-filter: blur(12px);
-
-	/* pushed down initially */
-	margin-top: 100vh;
+	background-color: transparent;
+	font-family: ;
 
 	z-index: 1;
+}
+
+.nav > :nth-child(1) {
+	display: flex;
+	justify-content: space-between;
+	border: 3px solid green;
+}
+
+.nav > :nth-child(2) {
+	display: flex;
+	justify-content: flex-end;
+	gap: 1rem;
+	border: 3px solid orange;
+}
+.button1 {
+	display: flex;
+	justify-content: space-between;
+}
+.button1 > button {
+	padding: 8px 13px ;
+	border: none;
+	background-color: transparent;
+	color: var(--text-white);
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: var(--font-family);
+	font-size: 15px;
+	font-weight: 550;
+	transition: background-color 0.3s ease;
+}
+
+.button2 > button {
+	padding: 8px 13px ;
+	border: none;
+	color: var(--text-white);
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: var(--font-family);
+	font-size: 15px;
+	font-weight: 550;
+	transition: background-color 0.3s ease;
+}
+.button2 > button:first-child {
+	background-color: var(--bg-color);
+	
+}
+
+
+.nav > :nth-child(1) > :nth-child(1) {
+	display: flex;
+	align-items: center;
+	gap :4px;
+	justify-content: space-between;
+	font-family: var(--font-family);
+	font-size: 1.4rem;
+	font-weight: 750;
+	color: var(--text-white);
+	cursor: pointer;
 }
 
 .hero {
@@ -68,17 +122,14 @@ header {
 	width: 100%;
 }
 
-
 .bgimage {
-	background-image:  url(assets/bg-light.svg);
-	z-index: -1;
-	background-position:center 20%;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	width: 100%;
-	height: 100%;
 	position: absolute;
-	top: -95px;
+	top: -164px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: auto;
+	width: 100%;
+	z-index: -1;
 }
 
 
