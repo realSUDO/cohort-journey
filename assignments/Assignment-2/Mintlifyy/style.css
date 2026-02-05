@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
 	--bg-color: #f4f5f4;
@@ -10,12 +10,10 @@
 	--color-lightbrown: #d1d092;
 	--color-subheading: #08090acc;
 	--color-blue: #3a88c8;
-	--color-sky: #004D74;
+	--color-sky: #004d74;
 	--color-lightpink: #bca794;
 	--color-black: #000;
-	--font-family : 'Inter', sans-serif;
-	
-	
+	--font-family: "Inter", sans-serif;
 
 	--text-white: #f4f5f4;
 }
@@ -27,7 +25,7 @@
 	box-sizing: border-box;
 }
 
-
+/* --------------------navbar------------------- */
 header {
 	position: fixed;
 	overflow: hidden;
@@ -39,7 +37,6 @@ header {
 	z-index: 100;
 	backdrop-filter: blur(14px);
 }
-
 
 .nav {
 	display: grid;
@@ -57,24 +54,26 @@ header {
 	z-index: 1;
 }
 
-.nav > :nth-child(1) {
+.nav> :nth-child(1) {
 	display: flex;
 	justify-content: space-between;
 	border: 3px solid transparent;
 }
 
-.nav > :nth-child(2) {
+.nav> :nth-child(2) {
 	display: flex;
 	justify-content: flex-end;
 	height: 60%;
 	gap: 0.5rem;
 }
+
 .button1 {
 	display: flex;
 	justify-content: space-between;
 }
-.button1 > button {
-	padding: 8px 13.7px ;
+
+.button1>button {
+	padding: 8px 13.7px;
 	border: none;
 	background-color: transparent;
 	color: var(--text-white);
@@ -86,35 +85,46 @@ header {
 	transition: background-color 0.3s ease;
 }
 
-.button2 > button {
+.button1>button:hover {
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.06);
+}
+
+.button2>button {
 	height: 35px;
 	display: flex;
-	align-items : center;
-	padding: 7px 14px ;
+	align-items: center;
+	justify-content: center;
+	padding: 7px 14px;
 	border: none;
 	color: var(--text-white);
 	border-radius: 3.6px;
 	cursor: pointer;
 	font-family: var(--font-family);
-	font-size: 14.5px;
+	font-size: 0.78vw;
+
 	font-weight: 500;
 	border-radius: 20px;
 	transition: background-color 0.3s ease;
 }
-.button2 > button:first-child {
+
+.button2>button:first-child {
 	background-color: rgba(255, 255, 255, 0.06);
-	
 }
-.button2 > button:last-child {
+
+.button2>button:last-child {
 	background-color: rgba(255, 255, 255);
-    color : #000;
+	color: #000;
 }
 
+.button2>button:last-child:hover {
+	background-color: rgba(215, 215, 225);
+}
 
-.nav > :nth-child(1) > :nth-child(1) {
+.nav> :nth-child(1)> :nth-child(1) {
 	display: flex;
 	align-items: center;
-	gap :4px;
+	gap: 4px;
 	justify-content: space-between;
 	font-family: var(--font-family);
 	font-size: 1.4rem;
@@ -122,6 +132,8 @@ header {
 	color: var(--text-white);
 	cursor: pointer;
 }
+
+/* ---------------navbar-ends------------- */
 
 .hero {
 	position: relative;
@@ -139,5 +151,3 @@ header {
 	width: 100%;
 	z-index: -1;
 }
-
-
