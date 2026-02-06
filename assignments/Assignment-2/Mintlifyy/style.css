@@ -211,5 +211,37 @@ header {
 }
 /*----------------- badge ends ---------------*/
 
+.hero > .content >  .text  {
+	position: absolute;
+	top: 20%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.hero > .content > .text > h1 > span {
+	display: block;
+}
+
+.hero > .content > .text > h1 > :last-child{
+	transform: translateY(-0.25rem);
+}
+.hero > .content >  .text > h1 {
+	font-family: var(--font-family);
+	font-size: 4rem;
+	letter-spacing: -0.02em;
+	font-weight: 600;
+	color: #fff;
+	border : 1px solid transparent;
+	width: 50rem;
+	text-align: center;
+
+}
+
+
+.hero > .content > .text > h2 {
+
+}
+
+
 
 
