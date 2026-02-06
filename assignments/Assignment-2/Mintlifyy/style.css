@@ -45,7 +45,8 @@ header {
 	grid-template-columns: 2.5fr 1fr;
 	align-items: center;
 	height: 100%;
-	width: 56.2vw;
+	/* width: 56.2vw; */
+	width: 1067px;
 	position: sticky;
 	top: 0;
 	background-color: transparent;
@@ -101,19 +102,19 @@ header {
 	border-radius: 3.6px;
 	cursor: pointer;
 	font-family: var(--font-family);
-	font-size: 0.78vw;
-
-	font-weight: 500;
+	font-weight: 510;
 	border-radius: 20px;
 	transition: background-color 0.3s ease;
 }
 
 .button2>button:first-child {
 	background-color: rgba(255, 255, 255, 0.06);
+	font-size: 0.92rem;
 }
 
 .button2>button:last-child {
 	background-color: rgba(255, 255, 255);
+	font-size: 0.92rem;
 	color: #000;
 }
 
@@ -151,3 +152,64 @@ header {
 	width: 100%;
 	z-index: -1;
 }
+
+
+.content {
+	position: relative ;
+	top : 65px;
+	height: 32rem;
+
+}
+
+/*--------- badge starts ---------*/
+.badge {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.18rem 0.25rem;
+	padding-right: 0.5rem;
+	align-items: center;
+	position: absolute;
+	top : 2.0rem;
+	left : 50%;
+	transform: translate(-50%);
+	background-color: rgba(0, 0, 0, 0.11);
+	border-radius: 1rem;
+	font-family: var(--font-family);
+	font-size: 0.78rem;
+	font-weight: 550;
+	gap: 0.6rem;
+	text-decoration: none;
+	color: var(--text-white);
+	
+}
+.badge:hover{
+	background-color: rgba(50, 50, 50, 0.11) ;
+}
+
+.badge > span {
+	background-color: #108766;
+	border-radius: 0.9rem;
+	padding: 0.25rem 0.5rem;
+
+}
+.badge > p {
+	font-size: 0.87rem;
+}
+.badge > .imgbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+	background-color: #fff;
+	border-radius: 100%;
+	transform: translateX(-15%);
+	width: 14px;
+	height: 14px;
+}
+.badge > .imgbox > img {
+	width: 12px;
+}
+/*----------------- badge ends ---------------*/
+
+
+
