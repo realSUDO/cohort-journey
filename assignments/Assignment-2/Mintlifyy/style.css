@@ -977,7 +977,7 @@ footer {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	border-top : 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	font-family: var(--font-family);
 }
 
@@ -991,21 +991,149 @@ footer>.content {
 }
 
 footer>.content>.head {
-	display : flex; 
+	display: flex;
 	justify-content: space-between;
-	padding : 1.1rem 2rem;
-	padding-top : 3rem;
+	padding: 1.1rem 2rem;
+	padding-top: 3rem;
 	width: 100%;
 	font-weight: 550;
-	margin-bottom: 0.5rem;
-	border : 1px solid rgba(0 , 0 , 0 , 0.1);
-	border-top : none;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: none;
 }
 
-footer  > .content > .head  > div {
+footer>.content>.head>div {
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
 	gap: 0.5rem;
 }
 
+footer>.content>.body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 4rem 0;
+	width: 100%;
+	height: 25rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: none;
+}
+
+footer>.content>.body>.table {
+	position: absolute;
+	font-size: 0.85rem;
+	font-weight: 550;
+	display: grid;
+	width: 90%;
+	height: auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: repeat(6, 1fr);
+	gap: 1.5rem;
+}
+
+footer>.content>.body>.table>a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	padding: 0.8rem 0.25rem;
+	height: 24px;
+	color: #000;
+}
+
+footer>.content>.body>.table>a:hover {
+	background-color: rgba(5, 5, 5, 0.1);
+	border-radius: 0.5rem;
+}
+
+.grey {
+	color: #474747;
+}
+
+#terms {
+	grid-column: 5 / 6;
+}
+
+#security {
+	grid-column: 5 / 6;
+}
+
+#fr {
+	grid-column: 2/3;
+}
+
+#dsar {
+	grid-column: 5/6;
+}
+
+
+footer>.content>.foot {
+	position: absolute;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: none;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 1.3rem;
+	width: 100%;
+	top: 30rem;
+	padding: 1.5rem 3rem;
+	margin-top: 1.6rem;
+	height: 7rem;
+	padding-left: 2rem;
+}
+
+footer>.content>.foot>div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+footer>.content>.foot>div>img {
+	width: 60px;
+}
+
+footer>.content>.footest {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	top: 40.6rem;
+	position: absolute;
+}
+
+.footest>.first>button {
+	color : #000;
+	padding: 0.65rem 1.6rem;
+	border: none;
+	border-radius: 1.5rem;
+	background : none;
+	margin: 1.3rem 0.2rem;
+	font-size: 0.8rem;
+	font-weight: 500;
+	background-color: rgba(0, 0, 0, 0.04);
+}
+
+.footest > .second {
+	font-size : 0.8rem;
+	color  : #454545;
+	transform : translateX(-2.3rem);
+}
+
+.footest > .third > .theme {
+	display: flex;
+	justify-content: space-around;
+	background-color: rgba(0, 0, 0, 0.06);
+	padding : 0.2rem 0.5rem;
+	border-radius: 1.5rem;
+
+}
+.footest > .third > .theme > img {
+	width: 13px;
+	margin : 0 0.2rem;
+}
+.footest > .third > .theme > :nth-child(2){
+	background-color: #fff;
+	border-radius: 100%;
+}
