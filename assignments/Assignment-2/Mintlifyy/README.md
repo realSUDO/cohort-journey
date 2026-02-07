@@ -2,7 +2,7 @@
 
 A close to pixel-perfect recreation of Mintlify's landing page, built with vanilla HTML and CSS.
 
-## 🎥 Demo
+## Demo
 
 
 https://github.com/user-attachments/assets/68d1f68d-db53-4208-bde5-c77ef0695972
@@ -14,7 +14,7 @@ https://github.com/user-attachments/assets/68d1f68d-db53-4208-bde5-c77ef0695972
 
 **Live Site:** [mintu-five.vercel.app](https://mintu-five.vercel.app/)
 
-## 📐 Sections Recreated
+## Sections Recreated
 
 - **Navigation Bar** - Fixed header with blur effect and responsive buttons
 - **Hero Section** - Animated badge, gradient background, email signup form, and hero image
@@ -25,7 +25,7 @@ https://github.com/user-attachments/assets/68d1f68d-db53-4208-bde5-c77ef0695972
 - **CTA Section** - Call-to-action with pricing and quickstart cards
 - **Footer** - Complete footer with navigation links, social icons, security badges, and theme toggle
 
-## 🎨 Design Details
+## Design Details
 
 ### Fonts
 - **Primary:** Inter (Google Fonts)
@@ -43,17 +43,17 @@ Black:          #000
 White:          #f4f5f4
 ```
 
-## ⏱️ Development Time
+## Development Time
 
 **14 hours** (rushed a bit at the end T_T)
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Pure HTML5
 - Vanilla CSS3
 - No frameworks or libraries
 
-## 🚀 Features
+## Features
 
 - Responsive layout
 - Smooth hover effects
