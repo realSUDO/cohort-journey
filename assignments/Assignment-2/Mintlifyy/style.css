@@ -749,7 +749,6 @@ main {
 
 .cards>.card>div {
 	position: relative;
-	border: 1px solid white;
 	height: 380px;
 	width: 450px;
 }
@@ -808,6 +807,7 @@ main {
 .read>div>button:hover {
 	color: var(--color-darkgreen);
 }
+
 .read>div>button>img {
 	width: 16px;
 }
@@ -851,3 +851,161 @@ main {
 .cards>.btn> :first-child {
 	background-color: grey;
 }
+
+/* --------- cards section ends --------- */
+
+.cta {
+	display: flex;
+	position: absolute;
+	top: 255rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	font-family: var(--font-family);
+}
+
+.cta>.ctacontent {
+	padding: 4.5rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+	width: 65rem;
+}
+
+.ctacontent>.ctatext {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0.5rem 0;
+	width: 65rem;
+}
+
+.ctacontent>.ctatext>strong {
+	font-size: 2.4rem;
+	font-weight: 620;
+	margin-bottom: 1.6rem;
+	line-height: 1.1rem;
+}
+
+.ctacontent>.ctabtn>button {
+	padding: 0.65rem 1.6rem;
+	border: none;
+	border-radius: 1.5rem;
+	margin: 1.3rem 0.2rem;
+	font-size: 0.99rem;
+	font-weight: 500;
+	color: #000;
+}
+
+.ctabtn>button:first-child {
+	background-color: #111;
+	color: #f0f0f0;
+}
+
+.ctabtn>button:first-child:hover {
+	background-color: #222;
+}
+
+.ctabtn>button:last-child {
+	background-color: #fff;
+	border: 1.5px solid #a8a8a8;
+}
+
+.ctabtn>button:last-child:hover {
+	background-color: #d6d6d6;
+}
+
+.ctagrid {
+	display: grid;
+	width: 90%;
+	margin-top: 3rem;
+	grid-template-columns: 1fr 1fr;
+}
+
+.ctagrid>div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ctagrid> :first-child {
+	border-right: 1px solid rgba(5, 5, 5, 0.1);
+}
+
+.ctagrid>div>div>img {
+	width: 50px;
+	height: auto;
+	margin: 1.56rem 0;
+	padding: 0.5rem;
+	border: 2px solid rgba(5, 5, 5, 0.1);
+	border-radius: 0.7rem;
+}
+
+.ctagrid>div>strong {
+	font-size: 1.3rem;
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+}
+
+.ctabtns {
+	display: flex;
+	align-items: center;
+	margin-top: 1.4rem;
+}
+
+.ctabtns>div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ctabtns>a {
+	font-size: 0.9rem;
+	text-decoration: none;
+	color: #23a841;
+}
+
+.ctabtns>div>img {
+	height: 16px;
+}
+
+footer {
+	position: absolute;
+	top: 379rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	border-top : 1px solid rgba(0, 0, 0, 0.1);
+	font-family: var(--font-family);
+}
+
+footer>.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	width: 65rem;
+}
+
+footer>.content>.head {
+	display : flex; 
+	justify-content: space-between;
+	padding : 1.1rem 2rem;
+	padding-top : 3rem;
+	width: 100%;
+	font-weight: 550;
+	margin-bottom: 0.5rem;
+	border : 1px solid rgba(0 , 0 , 0 , 0.1);
+	border-top : none;
+}
+
+footer  > .content > .head  > div {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 0.5rem;
+}
+
