@@ -1,9 +1,8 @@
 # Cursor - Landing Page Clone
 
 **Live Site:** [https://curzor-mu.vercel.app/]
-
-Hey reviewer!.. I just wanted to convery that do check out mintlify first T_T
-A pixel-perfect recreation of Cursor's landing page, built with vanilla HTML and CSS.
+<br>
+This is recreation of Cursor's landing page, built with vanilla HTML and CSS.
 
 ## Demo
 
