@@ -10,7 +10,7 @@ https://github.com/user-attachments/assets/68d1f68d-db53-4208-bde5-c77ef0695972
 
 
 
-> **Note:** To embed the video properly, drag and drop your `demo.mp4` file directly into this README while editing on GitHub. It will automatically generate a proper video embed URL.
+
 
 **Live Site:** [mintu-five.vercel.app](https://mintu-five.vercel.app/)
 
