@@ -15,10 +15,14 @@ console.log(void Symbol("HEHEHEH")); // done void
 
 let strrr = "stringgg";
 console.log(strrr.at(99)); // at is smart.. gives undefined..
+
+console.log("testing sq brackets")
+console.log(strrr[99]) 
 // whereas .. charAt gives.. "  "
 
 // symbol talks --------------------------------- //
 
+const newSym = Symbol("I am symbol")
 const UserData = {
 	// newSym : "no hello",  //typeof --> string
 	[newSym]: "no hello", //now this newSym is not a string key..
