@@ -87,9 +87,9 @@ console.log(bluntNum)
 Array.prototype.teduce = function(fn,initial){
 	let accumulator = initial
 	for (let i = 0 ; i<this.length ; i++){
-		bbc = fn(accumulator,this[i])
+		accumulator = fn(accumulator,this[i])
 	}
-	return bbc
+	return accumulator
 }
 
 let summ = num.teduce((acc,curr)=>{
@@ -170,3 +170,50 @@ Object.prototype.balue = function(value){
 }
 
 
+// ---------------------------- concat ---------------------------------------// 
+
+Array.prototype.myCat = function(...arr) {
+	let res = [];
+
+	for (let i = 0 ; i < this.length ; i++){
+		res.push(this[i]);
+	}
+
+	for (let ar in arr){
+		if (Array.isArray(ar)){
+			for (let i = 0 ; i < this.length ; i++){
+				res.push(ar[i]);
+			}
+		}
+		else {
+			res.push(ar);
+		}
+	}
+
+	return res;
+}
+
+let array1 = ["hello","there","i","like"]
+let array2 = ["java",undefined,"like"]
+let array3 = null
+console.log(array1.concat(array2,array3))
+
+// ----------------------------- concat finished ------------------------------// 
+
+// ---------------------------- flat ------------------------------//
+
+Array.prototype.buffed= function() {
+	let res = [];
+	for (let ar of this){
+		if(Array.isArray(ar)){
+			res.push(...ar.buffed())
+		}
+		else {
+			res.push(ar)
+		}
+	}
+	return res;
+}
+
+let rohit = ["shetty",["sa","sapera",[34,55]],["rohit",84]]
+console.log(rohit.buffed())
