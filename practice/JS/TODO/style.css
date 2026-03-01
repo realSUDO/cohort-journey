@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: system-ui, -apple-system, sans-serif;
+	background: #1a1a1a;
+	color: #e0e0e0;
+	padding: 40px 20px;
+}
+
+.inn {
+	max-width: 600px;
+	margin: 0 auto 30px;
+	display: flex;
+	gap: 10px;
+}
+
+#taskinput {
+	flex: 1;
+	padding: 12px 16px;
+	border: 1px solid #444;
+	border-radius: 6px;
+	font-size: 15px;
+	background: #2a2a2a;
+	color: #e0e0e0;
+}
+
+#addbtn, #addtaskbtn {
+	padding: 12px 24px;
+	background: #007bff;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+#addbtn:hover, #addtaskbtn:hover {
+	background: #0056b3;
+}
+
+#tasks {
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+#tasks > div {
+	background: #333;
+	padding: 16px;
+	border-radius: 6px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	line-height: 1.5;
+}

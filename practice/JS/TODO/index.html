@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="inn">
+		<input id="taskinput" type="text" placeholder="Enter your task here" />
+		<button id="addtaskbtn">Add Task</button>
+		<button id="addbtn">Create</button>
+	</div>
+	<div id="tasks"></div>
+	<script>
+		document.getElementById("addtaskbtn").addEventListener("click", () => {
+			const input = document.getElementById("taskinput");
+			if (input.value.trim()) {
+				const task = document.createElement("div");
+				task.textContent = input.value;
+				document.getElementById("tasks").appendChild(task);
+				input.value = "";
+			}
+		});
+
+		document.getElementById("addbtn").addEventListener("click", () => {
+			fetch("https://api.freeapi.app/api/v1/public/quotes")
+				.then((res) => res.json())
+				.then((data) => {
+					const task = document.createElement("div");
+					task.textContent = data.data.data[0].content;
+					document.getElementById("tasks").appendChild(task);
+				});
+		});
+	</script>
+</body>
+</html>
