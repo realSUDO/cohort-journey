@@ -23,21 +23,3 @@ addBtn.addEventListener("click", () => {
 })
 
 // Assignment : double click to rename 
-
-list.addEventListener("dblclick", (el) => {
-	if (el.target.tagName === "LI") {
-		const li = el.target;
-		const currentText = li.firstChild.textContent;
-		const inputField = document.createElement("input");
-		inputField.type = "text";
-		inputField.value = currentText;
-		li.firstChild.replaceWith(inputField);
-		inputField.focus();
-
-		inputField.addEventListener("blur", () => {
-			const newText = inputField.value;
-			const textNode = document.createTextNode(newText);
-			inputField.replaceWith(textNode);
-		});
-	}
-});		
