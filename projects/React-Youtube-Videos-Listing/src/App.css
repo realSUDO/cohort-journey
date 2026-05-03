@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+/* navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #0f0f0f;
+  border-bottom: 1px solid #272727;
+  padding: 0 1.5rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.logo-img { width: 24px; height: 24px; object-fit: contain; }
+
+.search-bar {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.search-bar input {
+  flex: 1;
+  background: #121212;
+  border: 1px solid #303030;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+  padding: 0 1rem;
+  height: 36px;
+  color: #fff;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.search-bar input:focus { border-color: #1c62b9; }
+
+.search-bar button {
+  background: #272727;
+  border: 1px solid #303030;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  padding: 0 1.2rem;
+  height: 36px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.search-bar button:hover { background: #3f3f3f; }
+
+.nav-right { flex-shrink: 0; margin-left: auto; }
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #3ea6ff;
+  color: #000;
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* layout */
+.app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem 1rem;
+}
+
+/* card */
+.card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+
+.thumb-wrap {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #272727;
+}
+
+.thumb-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.2s;
+}
+
+.card:hover .thumb-wrap img { transform: scale(1.03); }
+
+.info { padding: 0.6rem 0 0; }
+
+.title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.3rem;
+  color: #fff;
+}
+
+.channel { font-size: 0.8rem; color: #aaa; margin-bottom: 0.15rem; }
+.meta    { font-size: 0.8rem; color: #aaa; }
+
+/* skeleton */
+.card.skeleton { pointer-events: none; }
+
+.sk-thumb {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  background: #272727;
+  animation: shimmer 1.4s infinite;
+  background: linear-gradient(90deg, #1f1f1f 25%, #2a2a2a 50%, #1f1f1f 75%);
+  background-size: 200% 100%;
+}
+
+.sk-line {
+  height: 12px;
+  border-radius: 4px;
+  margin-bottom: 0.4rem;
+  background: linear-gradient(90deg, #1f1f1f 25%, #2a2a2a 50%, #1f1f1f 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+.sk-line.long   { width: 90%; margin-top: 0.6rem; }
+.sk-line.medium { width: 60%; }
+.sk-line.short  { width: 40%; }
+
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.pagination button {
+  background: #272727;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-family: 'Roboto', sans-serif;
+  transition: background 0.15s;
+}
+
+.pagination button:hover    { background: #3f3f3f; }
+.pagination button:disabled { opacity: 0.3; cursor: not-allowed; }
+.pagination span            { font-size: 0.85rem; color: #aaa; }
+
+.status {
+  text-align: center;
+  margin-top: 5rem;
+  color: #aaa;
+}
