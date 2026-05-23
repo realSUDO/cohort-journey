@@ -9,10 +9,10 @@ function UserCard({ user }) {
         <h2 className="name">{user.name.title} {user.name.first} {user.name.last}</h2>
         <p className="username">@{user.login.username}</p>
         <div className="details">
-          <span>✉ {user.email}</span>
-          <span>📞 {user.phone}</span>
-          <span>📍 {user.location.city}, {user.location.country}</span>
-          <span>🎂 Age {user.dob.age}</span>
+          <span><svg width="11" height="11"><use href="/icons.svg#icon-mail"/></svg>{user.email}</span>
+          <span><svg width="11" height="11"><use href="/icons.svg#icon-phone"/></svg>{user.phone}</span>
+          <span><svg width="11" height="11"><use href="/icons.svg#icon-map-pin"/></svg>{user.location.city}, {user.location.country}</span>
+          <span><svg width="11" height="11"><use href="/icons.svg#icon-calendar"/></svg>Age {user.dob.age}</span>
         </div>
       </div>
     </div>
